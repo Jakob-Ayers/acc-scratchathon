@@ -1,0 +1,15 @@
+body {
+    margin: 40px;
+    padding: 40px;
+    border: 1px solid black;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'head';
+}
+
+header {
+    grid-area: head;
+}
