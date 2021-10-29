@@ -1,15 +1,63 @@
 body {
-    margin: 40px;
-    padding: 40px;
+    margin: 1vw;
+    padding: 1vw;
     border: 1px solid black;
 }
 
-.grid-container{
+a {
+    color: #72007a
+}
+
+
+.grid-container {
     display: grid;
+    grid-gap: .2vw;
+
+    grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
-    'head';
+    'head head head'
+    'res res res'
+    'begin inter adv'
+    'foot foot foot';
 }
 
 header {
     grid-area: head;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.beginner {
+    grid-area: begin;
+}
+.intermediate {
+    grid-area: inter;
+}
+.advanced {
+    grid-area: adv;
+}
+
+.beginner, .intermediate, .advanced {
+    margin: 1vw;
+    padding: 1vw;
+    border: 1px solid black;
+}
+
+.beginner > h2, .intermediate > h2, .advanced > h2 {
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+
+.resource {
+    grid-area: res;
+}
+
+footer {
+    font-size: 1vw;
+    grid-area: foot;
+    text-align: center;
 }
