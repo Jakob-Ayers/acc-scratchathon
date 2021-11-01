@@ -1,0 +1,43 @@
+body {
+    margin: 1vw;
+    padding: 1vw;
+    border: 1px solid black;
+}
+
+a {
+    color: #72007a
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'head'
+    'nav'
+    'main'
+    'back'
+    'foot';
+}
+
+header {
+    grid-area: head;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+.back {
+    grid-area: back;
+}
+
+footer {
+    grid-area: foot;
+
+    font-size: 1vw;
+    text-align: center;
+}
