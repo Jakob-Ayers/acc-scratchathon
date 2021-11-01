@@ -25,6 +25,13 @@ header {
 
 nav {
     grid-area: nav;
+
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1vw;
+
+    padding: 1vw;
+    margin: 1vw;
 }
 
 main {
