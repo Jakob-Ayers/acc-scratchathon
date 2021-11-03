@@ -15,10 +15,28 @@ a {
 
     grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
-    'head head head'
+    'img head img2'
     'nav nav nav'
     'begin inter adv'
     'foot foot foot';
+}
+
+.imega {
+    grid-area: img;
+    float: left;
+}
+.imega2 {
+    grid-area: img2;
+    float: right;
+}
+.imega > img {
+    float: right;
+}
+.imega2 > img {
+    float: left;
+}
+.imega > img, .imega2 > img{
+    width: 5vw;
 }
 
 header {
@@ -28,6 +46,12 @@ header > h1 {
     text-align: center;
     font-size: 2.5vw;
 }
+/*
+header > img {
+    width: 5vw;
+    display: inline;
+}
+*/
 
 nav {
     border: 1px solid black;
