@@ -54,12 +54,13 @@ header > img {
 */
 
 nav {
-    border: 1px solid black;
     grid-area: nav;
     text-align: center;
-    padding: 1vw;
     margin: 1vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
+}
+nav a{
+    text-decoration: none;
 }
 
 .beginner {
@@ -82,13 +83,39 @@ nav {
     text-align: center;
 }
 
-
-.resource {
-    grid-area: res;
+.beginner a, .intermediate a, .advanced a {
+text-decoration: none;
 }
 
 footer {
     font-size: 1vw;
     grid-area: foot;
     text-align: center;
+}
+footer a {
+    border: 1px solid #6ab43d;
+    background-color: #6ab43d;
+
+    border-radius: 5px;
+    
+    color: #72007a;
+    text-decoration: none;
+
+    padding: .2vw;
+    margin: .2vw;
+}
+footer a strong{
+    background-color: #72007a;
+    color: #6ab43d;
+    padding: .1vw;
+    border: 1px solid #72007a;
+    border-radius: 5px;
+}
+footer a:hover {
+    background-color: #72007a;
+    color: #6ab43d;
+}
+footer a:hover strong{
+    background-color: #6ab43d;
+    color:#72007a;
 }
