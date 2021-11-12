@@ -11,11 +11,11 @@ a {
 .grid-container {
     display: grid;
     grid-template-areas: 
-    'head'
-    'nav'
-    'main'
-    'back'
-    'foot';
+    'head head'
+    'nav nav'
+    'main imega'
+    'back back'
+    'foot foot';
 }
 
 header {
@@ -41,10 +41,15 @@ main {
     border: 1px solid black;
     margin: .8vw;
     padding: .8vw;
+    display: block;
 }
 main > h2 {
     text-align: center;
     font-size: 2vw;
+}
+
+.imega {
+    grid-area: imega;
 }
 
 .back {
