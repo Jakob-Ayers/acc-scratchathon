@@ -38,10 +38,18 @@ nav a{
 
 main {
     grid-area: main;
+    border: 1px solid black;
+    margin: .8vw;
+    padding: .8vw;
+}
+main > h2 {
+    text-align: center;
+    font-size: 2vw;
 }
 
 .back {
     grid-area: back;
+    text-decoration: none;
 }
 
 footer {
@@ -75,4 +83,9 @@ footer a:hover {
 footer a:hover strong{
     background-color: #6ab43d;
     color:#72007a;
+}
+
+.floatright {
+    float: right;
+    clear: right;
 }
