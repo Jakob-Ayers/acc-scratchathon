@@ -11,11 +11,11 @@ a {
 .grid-container {
     display: grid;
     grid-template-areas: 
-    'head head'
-    'nav nav'
-    'main imega'
-    'back back'
-    'foot foot';
+    'head'
+    'nav'
+    'main'
+    'back'
+    'foot';
 }
 
 header {
