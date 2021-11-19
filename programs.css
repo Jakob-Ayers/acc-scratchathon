@@ -2,7 +2,6 @@ body {
     margin: 1vw;
     padding: 1vw;
     border: 1px solid black;
-    font-size: 1.3vw;
 }
 
 a {
@@ -12,23 +11,45 @@ a {
 .grid-container {
     display: grid;
     grid-template-areas: 
-    'head'
-    'links'
-    'back'
-    'foot';
+    'imega head imega2'
+    'links links links'
+    'back back back'
+    'foot foot foot';
 }
-header{
+
+.imega {
+    grid-area: imega;
+}
+
+header {
     grid-area: head;
     text-align: center;
+}
+header > h1 {
+    font-size: 3vw;
+}
+
+.imega2 {
+    grid-area: imega2;
 }
 
 .links {
     grid-area: links;
+    padding: 1vw;
+    margin: 1vw;
+    border: 1px solid black;
 }
+.links > ul {
+    font-size: 1.3vw;
+}
+.links > h2 {
+    font-size: 2vw;
+}
+
 .back {
     grid-area: back;
 }
-.back > a{
+.back > a {
     text-decoration: none;
     padding-bottom: 1vw;
 }
@@ -50,7 +71,7 @@ footer a {
     padding: .2vw;
     margin: .2vw;
 }
-footer a strong{
+footer a strong {
     background-color: #72007a;
     color: #6ab43d;
     padding: .1vw;
