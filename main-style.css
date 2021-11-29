@@ -7,28 +7,13 @@ body {
 }
 
 a {
-    color: #72007a
-}
-
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-    'head'
-    'nav'
-    'main'
-    'back'
-    'foot';
-}
-
-header {
-    grid-area: head;
+    color: #72007a;
+    text-decoration: none;
 }
 header > h1 {
     text-align: center;
 }
-
 nav {
-    grid-area: nav;
     text-align: center;
     margin: 1vw;
 }
@@ -37,27 +22,15 @@ nav a{
 }
 
 main {
-    grid-area: main;
     border: 1px solid black;
     margin: .8vw;
     padding: .8vw;
-    display: block;
 }
 main > h2 {
     text-align: center;
 }
 
-.imega {
-    grid-area: imega;
-}
-
-.back {
-    grid-area: back;
-    text-decoration: none;
-}
-
 footer {
-    grid-area: foot;
     text-align: center;
 }
 footer a {
@@ -86,9 +59,4 @@ footer a:hover {
 footer a:hover strong{
     background-color: #6ab43d;
     color:#72007a;
-}
-
-.floatright {
-    float: right;
-    clear: right;
 }
