@@ -2,6 +2,8 @@ body {
     margin: 1vw;
     padding: 1vw;
     border: 1px solid black;
+
+    font-size: 1.5vw;
 }
 
 a {
@@ -26,9 +28,6 @@ header {
     grid-area: head;
     text-align: center;
 }
-header > h1 {
-    font-size: 3vw;
-}
 
 nav {
     grid-area: nav;
@@ -45,12 +44,6 @@ nav {
     margin: 1vw;
     border: 1px solid black;
 }
-.links > ul {
-    font-size: 1.3vw;
-}
-.links > h2 {
-    font-size: 2vw;
-}
 
 .back {
     grid-area: back;
@@ -61,7 +54,6 @@ nav {
 }
 
 footer {
-    font-size: 1vw;
     grid-area: foot;
     text-align: center;
 }
